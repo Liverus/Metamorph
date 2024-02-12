@@ -8,7 +8,7 @@
   <br>
 </p>
 
-## About The Project
+# About
 
 Metamorph is a Windows HWID-Spoofer project for the game SCP:SL. It internally uses kd-mapper to load an unsigned driver for the kernel part.
 The spoofer has been made specifically for changing what SCP:SL collects and not anything else. Therefore, Metamorph will hardly have any value outside of its original purpose.
