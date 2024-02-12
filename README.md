@@ -38,7 +38,7 @@ Tested on the 12/02/2024.
 
 # Limitations
 
-The code relies on Mutante by SamuelTulac which is as he stated, "heavily outdated". Therefore, consider this project as the same.
+The code relies on Mutante by SamuelTulach which is as he stated, "heavily outdated". Therefore, consider this project as the same.
 There are still a few remaining detection vectors:
 * IP Address
 * User Security ID (SID)
