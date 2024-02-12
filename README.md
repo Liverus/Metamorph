@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/Liverus/Metamorph" src="Metamorph.png">
-    <img src="" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Liverus/Metamorph">
+    <img src="Metamorph.png" alt="Metamorph" width="240" height="240">
   </a>
   <br>
   <br>
