@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\modules">
+      <UniqueIdentifier>{c1c7bbd2-1451-4bc2-af3c-2104d062b9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\kdmapper">
+      <UniqueIdentifier>{6ab0d663-fd5f-4578-9344-864e2c5b51a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kdmapper">
+      <UniqueIdentifier>{9e6e7be2-8f7b-4b8a-a010-5be641d03049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\skcrypter">
+      <UniqueIdentifier>{c97c2c92-b91a-4fec-8747-cf7c6a7687c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{0a00ff2f-54bb-443a-91ae-f028b34e4007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vdf_parser">
+      <UniqueIdentifier>{82369cf0-4eeb-4b01-a3cd-c9e33fe66d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\console">
+      <UniqueIdentifier>{50255e2b-eb5c-42c3-8c1e-8488b15cb9a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\console">
+      <UniqueIdentifier>{08d4c6b7-f91e-47bd-adb6-09abfaaf6ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\registry">
+      <UniqueIdentifier>{706187c1-c62e-42b8-b512-9d23e787e7ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hash">
+      <UniqueIdentifier>{dafcefe2-b240-48da-8d2c-5ee920b5fbce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hash">
+      <UniqueIdentifier>{99e299f0-8897-4a93-a7c9-7f273f0b7dcb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spoofer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\console\console.cpp">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\kdmapper\utils.cpp">
+      <Filter>Source Files\kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\kdmapper\service.cpp">
+      <Filter>Source Files\kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\kdmapper\portable_executable.cpp">
+      <Filter>Source Files\kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\kdmapper\kdmapper.cpp">
+      <Filter>Source Files\kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\kdmapper\intel_driver.cpp">
+      <Filter>Source Files\kdmapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hash\hash.cpp">
+      <Filter>Source Files\hash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spoofer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\scpsl.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\windows.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\steam.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\console\console.h">
+      <Filter>Header Files\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\vdf_parser\vdf_parser.hpp">
+      <Filter>Header Files\vdf_parser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\intel_driver.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\intel_driver_resource.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\kdmapper.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\nt.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\portable_executable.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\service.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\kdmapper\utils.hpp">
+      <Filter>Header Files\kdmapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\registry\registry.hpp">
+      <Filter>Header Files\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\skcrypter\skcrypter.h">
+      <Filter>Header Files\skcrypter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hash\hash.h">
+      <Filter>Header Files\hash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Metamorph-Usermode.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Metamorph.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="embed.py">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

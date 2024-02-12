@@ -1,0 +1,13 @@
+#pragma once
+
+#include "../spoofer.h"
+
+namespace SMBios
+{
+	NTSTATUS Spoof();
+
+	char* GetString(SMBIOS_HEADER* header, SMBIOS_STRING string);
+	void RandomizeString(char* string);
+	NTSTATUS ProcessTable(SMBIOS_HEADER* header);
+	NTSTATUS LoopTables(void* mapped, ULONG size);
+}

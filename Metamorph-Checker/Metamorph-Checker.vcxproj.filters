@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\modules">
+      <UniqueIdentifier>{cfe25ef1-361d-489d-a96d-2a922f7604b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\json">
+      <UniqueIdentifier>{7f4a4f5e-2599-4bb2-b635-91d905bc3b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\skcrypter">
+      <UniqueIdentifier>{b43c97cd-100e-410b-91f9-372687383fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\registry">
+      <UniqueIdentifier>{aecb8977-351e-4fd6-aa3e-985c7c3b38c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\console">
+      <UniqueIdentifier>{b60340a0-de8b-46e4-8239-cc14bc75354a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\console">
+      <UniqueIdentifier>{a8793cb1-361a-4d8b-8813-432e0cd66023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hash">
+      <UniqueIdentifier>{c15bc26b-38a4-4e95-a941-1fe8713f5234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hash">
+      <UniqueIdentifier>{adfa0aa7-b1e2-4867-ba6a-4027b0ea7fca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wmic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\console\console.cpp">
+      <Filter>Source Files\console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Shared\hash\hash.cpp">
+      <Filter>Source Files\hash</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wmic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\arp.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\disk.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\driver.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\motherboard.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\network.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\processor.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\sid.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\smbios.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\steam.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="modules\windows.hpp">
+      <Filter>Source Files\modules</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="skcrypter\skcrypter.h">
+      <Filter>Header Files\skcrypter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\json\json.hpp">
+      <Filter>Header Files\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\registry\registry.hpp">
+      <Filter>Header Files\registry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\console\console.h">
+      <Filter>Header Files\console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\hash\hash.h">
+      <Filter>Header Files\hash</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Metamorph-Checker.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Metamorph-Checker.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

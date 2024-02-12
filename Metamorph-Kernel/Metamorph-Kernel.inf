@@ -1,0 +1,88 @@
+;
+; Metamorph-Kernel.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USBDevice
+ClassGuid={88BAE032-5A81-49f0-BC3D-A4FF138216D6}
+Provider=%ManufacturerName%
+CatalogFile=Metamorph-Kernel.cat
+DriverVer=1
+PnpLockDown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+Metamorph-Kernel_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+Metamorph-Kernel.sys  = 1,,
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NT$ARCH$
+
+[Standard.NT$ARCH$]
+%Metamorph-Kernel.DeviceDesc%=Metamorph-Kernel_Device, USB\VID_vvvv&PID_pppp
+
+[Metamorph-Kernel_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+Metamorph-Kernel.sys
+
+[Metamorph-Kernel_Device.NT.HW]
+AddReg=Metamorph-Kernel_AddReg
+
+[Metamorph-Kernel_AddReg]
+; By default, USBDevice class uses iProduct descriptor to name the device in
+; Device Manager on Windows 8 and higher.
+; Uncomment for this device to use %DeviceName% on Windows 8 and higher:
+;HKR,,FriendlyName,,%Metamorph-Kernel.DeviceDesc%
+
+;-------------- Service installation
+[Metamorph-Kernel_Device.NT.Services]
+AddService = Metamorph-Kernel,%SPSVCINST_ASSOCSERVICE%, Metamorph-Kernel_Service_Inst
+
+; -------------- Metamorph-Kernel driver install sections
+[Metamorph-Kernel_Service_Inst]
+DisplayName    = %Metamorph-Kernel.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\Metamorph-Kernel.sys
+
+;
+;--- Metamorph-Kernel_Device Coinstaller installation ------
+;
+
+[Metamorph-Kernel_Device.NT.CoInstallers]
+AddReg=Metamorph-Kernel_Device_CoInstaller_AddReg
+CopyFiles=Metamorph-Kernel_Device_CoInstaller_CopyFiles
+
+[Metamorph-Kernel_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[Metamorph-Kernel_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[Metamorph-Kernel_Device.NT.Wdf]
+KmdfService =  Metamorph-Kernel, Metamorph-Kernel_wdfsect
+[Metamorph-Kernel_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Metamorph"
+ClassName="Universal Serial Bus devices"
+DiskName = "Metamorph-Kernel Installation Disk"
+Metamorph-Kernel.DeviceDesc = "Metamorph-Kernel Device"
+Metamorph-Kernel.SVCDESC = "Metamorph-Kernel Service"
+REG_MULTI_SZ = 0x00010000
