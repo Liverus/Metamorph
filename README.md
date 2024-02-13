@@ -17,7 +17,7 @@ The code is garbage and pasted but it serves its purpose. I take no credit for t
 
 
 
-Tested on the 12/02/2024.
+Tested on the 12/02/2024 for Windows 11 (10.0.22631).
 
 # Features
 
