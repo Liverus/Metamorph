@@ -8,6 +8,30 @@
   <br>
 </p>
 
+> [!IMPORTANT]
+> This project was never intented to be maintained.
+> 
+> Please stop asking me to update this project.
+> Take a look at Midnight if you want something better.
+
+> [!CAUTION]
+> It has been brought to my intention that someone is impersonating me on telegram and discord, actively trying to charge kids $10 for this free and open-source project. There is no 'private' version of this software.
+> 
+> I have already reported the accounts, if you interacted with them please send me a message.
+> If you are unsure wether it's me or not, here are my **only** socials:
+> 
+> Telegram: @Liverus
+> 
+> Discord: Liverus
+>
+> This kind of behaviour is what makes me want to stop releasing stuff, even if it's crap.
+> Please report this person if you encounter him:
+> 
+> ![image](https://github.com/Liverus/Metamorph/assets/44021130/f3d12439-92ac-400d-9b88-46ada61358ff)
+
+
+
+
 # About
 
 Metamorph is a Windows HWID-Spoofer project for the game SCP:SL. It internally uses kd-mapper to load an unsigned driver for the kernel part.
