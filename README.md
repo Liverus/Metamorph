@@ -9,7 +9,7 @@
 </p>
 
 > [!IMPORTANT]
-> This project was never intented to be maintained.
+> This project was never intended to be maintained.
 > 
 > Please stop asking me to update this project.
 > Take a look at Midnight if you want something better.
